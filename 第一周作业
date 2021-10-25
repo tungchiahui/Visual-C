@@ -23,6 +23,7 @@
 
 
 //6.输入1~7的数字，显示出其代表的礼拜，并打印输出。
+#define _CRT_SECURE_NO_WARNINGS 1
 
 #include<stdio.h>
 

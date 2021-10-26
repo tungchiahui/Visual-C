@@ -4,7 +4,18 @@
 
 //2.从键盘输入圆环的外内半径值，编程序计算圆环的面积。要求π的取值为3.1415926，输入与输出均采用双精度。
 
-
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#define pai 3.1415926
+int main()
+{
+	double r,s;
+	printf("%s", "请输入半径：");
+		scanf("%lf", &r);
+		s = r * r * pai;
+		printf("面积是: %lf", s);
+		return 0;
+}
 
 
 //3.交换两个变量的值，由终端输入两个整数给变量x、y，然后交换x和y的值后，输出x和y。
@@ -23,14 +34,13 @@
 
 
 //6.输入1~7的数字，显示出其代表的礼拜，并打印输出。
+
 #define _CRT_SECURE_NO_WARNINGS 1
-
 #include<stdio.h>
-
 int main()
 {
 	int a;
-	scanf_s("%d", &a);
+	scanf("%d", &a);
 	switch (a) {
 	case 7:printf("星期日\n"); break;
 	case 6:printf("星期六\n"); break;

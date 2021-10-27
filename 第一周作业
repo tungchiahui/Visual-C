@@ -24,30 +24,29 @@ int main()
 
 
 //4.输入一个整数x，如果x的值大于0请输出数值1，如果小于0请输出数值-1，如果等于0请输出数值0。
+
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 int main()
 {
 	int x;
-	int a = 1;
-	int b = -1;
-	int c = 0;
 	printf("请输入x:");
 	scanf("%d", &x);
 	if (x > 0) {
-		printf("%d", a);
+		printf("%d",1);
 	}
 	else
 	{
 		if (x < 0) {
-			printf("%d", b);
+			printf("%d", -1);
 		}
 		else {
-			printf("%d", c);
+			printf("%d", 0);
 		}
 		return 0;
 	}
 }
+
 //5.输入两个整数，按照由大到小的顺序排序，最后输出。（提升题：可尝试输入三个由大到小排序）
 
 

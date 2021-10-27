@@ -20,8 +20,19 @@ int main()
 
 //3.交换两个变量的值，由终端输入两个整数给变量x、y，然后交换x和y的值后，输出x和y。
 
-
-
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int x, y;
+	printf("请输入x:");
+	scanf("%d", &x);
+	printf("请输入y:");
+	scanf("%d", &y);
+	printf("输出x:%d\n", y);
+	printf("输出y:%d\n", x);
+		return 0;
+}
 
 //4.输入一个整数x，如果x的值大于0请输出数值1，如果小于0请输出数值-1，如果等于0请输出数值0。
 
@@ -47,8 +58,26 @@ int main()
 		return 0;
 }
 
-//5.输入两个整数，按照由大到小的顺序排序，最后输出。（提升题：可尝试输入三个由大到小排序）
+//5.输入两个整数，按照由大到小的顺序排序，最后输出。（提升题，第7题）
 
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int x, y;
+	printf("请输入两个数字:\n");
+	scanf("%d", &x);
+	scanf("%d", &y);
+	if (x >= y)
+	{
+		printf("输出:%d＞%d", x, y);
+	}
+	else
+	{
+		printf("输出:%d＞%d", y, x);
+	}
+		return 0;
+}
 
 
 
@@ -71,3 +100,6 @@ int main()
 	}
 	return 0;
 }
+
+//7.输入3个整数，按照由大到小的顺序排序，最后输出。
+

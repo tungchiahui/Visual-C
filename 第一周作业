@@ -1,5 +1,18 @@
 //1.编程序将单词“China”加密成密文，加密规则是：用原字母后面第4个字母代替原字母。（用ASCII码操作）
 
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{	
+	char a = 'C', b = 'h', c = 'i', d = 'n', e = 'a';
+	a += 4; //a=a+4
+	b += 4;
+	c += 4;
+	d += 4;
+	e += 4;
+	printf("%c%c%c%c%c",a,b,c,d,e);
+	return 0;
+}
 
 
 //2.从键盘输入圆环的外内半径值，编程序计算圆环的面积。要求π的取值为3.1415926，输入与输出均采用双精度。

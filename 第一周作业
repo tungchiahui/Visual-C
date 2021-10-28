@@ -6,15 +6,17 @@
 
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-#define pai 3.1415926
+#define π 3.1415926
 int main()
 {
-	double r,s;
-	printf("%s", "请输入半径：");
-		scanf("%lf", &r);
-		s = r * r * pai;
-		printf("面积是: %lf", s);
-		return 0;
+	double R,r,S;
+	printf("请输入大圆半径:");
+	scanf("%lf", &R);
+	printf("请输入小圆半径:");
+	scanf("%lf", &r);
+	S = R * R * π - r * r * π;
+	printf("面积是: %lf", S);
+	return 0;
 }
 
 
@@ -103,3 +105,31 @@ int main()
 
 //7.输入3个整数，按照由大到小的顺序排序，最后输出。
 
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int a, b, c, d;
+	printf("请输入3个数字:\n");
+	scanf("%d,%d,%d", &a, &b, &c);
+	if (a < c)   //若a比c小，a与c交换数值，从而a>c。
+	{
+		d = c;
+		c = a;
+		a = d;
+	}
+	if (c > b)  //若c比b小，b与c交换数值，从而b>c，此时c变为最小的数值。
+	{
+		d = c;
+		c = b;
+		b = d;
+	}
+	if (b > a) //若b比a大，a与b交换数值，从而a>b，a成为最大的值。
+	{
+		d = b;
+		b = a;
+		a = d;
+	}
+	printf("从大到小排列为:%d，%d，%d",a,b,c);
+		return 0;
+}

@@ -73,7 +73,7 @@ int main()
 		return 0;
 }
 
-//5.输入两个整数，按照由大到小的顺序排序，最后输出。（提升题，第7题）
+//5.输入两个整数，按照由大到小的顺序排序，最后输出。
 
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
@@ -95,28 +95,7 @@ int main()
 }
 
 
-
-//6.输入1~7的数字，显示出其代表的礼拜，并打印输出。
-
-#define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
-int main()
-{
-	int a;
-	scanf("%d", &a);
-	switch (a) {
-	case 7:printf("星期日\n"); break;
-	case 6:printf("星期六\n"); break;
-	case 5:printf("星期五\n"); break;
-	case 4:printf("星期四\n"); break;
-	case 3:printf("星期三\n"); break;
-	case 2:printf("星期二\n"); break;
-	case 1:printf("星期一\n"); break;
-	}
-	return 0;
-}
-
-//7.输入3个整数，按照由大到小的顺序排序，最后输出。
+//5.输入3个整数，按照由大到小的顺序排序，最后输出。
 
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
@@ -146,3 +125,25 @@ int main()
 	printf("从大到小排列为:%d，%d，%d",a,b,c);
 		return 0;
 }
+
+//6.输入1~7的数字，显示出其代表的礼拜，并打印输出。
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int a;
+	scanf("%d", &a);
+	switch (a) {
+	case 7:printf("星期日\n"); break;
+	case 6:printf("星期六\n"); break;
+	case 5:printf("星期五\n"); break;
+	case 4:printf("星期四\n"); break;
+	case 3:printf("星期三\n"); break;
+	case 2:printf("星期二\n"); break;
+	case 1:printf("星期一\n"); break;
+	}
+	return 0;
+}
+
+

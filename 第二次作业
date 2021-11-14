@@ -57,7 +57,7 @@ int main()
 #include<stdio.h>
 fac(int x)
 {
-	int i, y;
+	long int i, y;
 	y = 1;
 	for (i = 1; i < x+1; i++)
 	{
@@ -67,7 +67,7 @@ fac(int x)
 }
 int main()
 {
-	int i, x, y;
+	long int i, x, y;
 	y = 0;
 	scanf("%d", &x);
 	for (i = 1; i < x + 1; i++)

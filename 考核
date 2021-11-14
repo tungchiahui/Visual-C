@@ -35,7 +35,30 @@ int main()
 
 //2，
 
-
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+struct stu
+{
+	char name[10];
+	long number;
+	long qq;
+};
+int main()
+{
+	int x;
+	struct stu s = { "djh",21110100133,2225279276};
+	scanf("%d", &x);
+	switch (x)
+	{
+	case 1:
+		printf("\n%s", s.name); break;
+	case 2:
+		printf("\n%d", s.number); break;
+	case 3:
+		printf("\n%d", s.qq);
+	}
+	return 0;
+}
 
 
 
@@ -64,6 +87,9 @@ int main()
 }
 
 
+
+
+//4，
 
 
 

@@ -1,0 +1,83 @@
+//1
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int x, y;
+	scanf("%d", &x);
+	if (x < 1)
+	{
+		y = x;
+		printf("%d", y);
+	}
+	else if(x >= 1 && x < 10)
+	{
+		y = 2 * x - 1;
+		printf("%d", y);
+	}
+	else
+	{
+		y = 3 * x - 11;
+		printf("%d", y);
+	}
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+//2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//5，
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+fun(int x)
+{
+	long int i, y;
+	y = 1;
+	for (i = 1; i < x + 1; i++)
+	{
+		y = y * i;
+	}
+	return y;
+}
+int main()
+{
+	long int i, x, y;
+	y = 0;
+	scanf("%d", &x);
+	for (i = 1; i < x + 1; i++)
+	{
+		y = y + fun(i);
+	}
+	printf("%d", y);
+	return 0;
+}

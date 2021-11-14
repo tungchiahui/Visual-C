@@ -1,4 +1,4 @@
-//三角形判断
+//1，三角形判断
 
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
@@ -21,4 +21,59 @@ int main()
 		return 0;
 }	
 
-//
+//2，an=n，等差数列求和
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int n = 1, m = 0;
+	scanf("%d", &n);
+	m = n + n * (n - 1) / 2;
+	printf("%d", m);
+	return 0;
+}
+
+
+//2，等差数列求和。
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int n,m,y;
+	y = 0;
+	scanf("%d", &n);
+	for (m = 0; m <= n; m++)
+	{
+		y += m;
+	}
+	return 0;
+}
+
+//3，1！+2！+3！+... ...+n！=？
+
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+fac(int x)
+{
+	int i, y;
+	y = 1;
+	for (i = 1; i < x+1; i++)
+	{
+		y = y * i;
+	}
+	return y;
+}
+int main()
+{
+	int i, x, y;
+	y = 0;
+	scanf("%d", &x);
+	for (i = 1; i < x + 1; i++)
+	{
+		y = y + fac(i);
+	}
+	printf("%d", y);
+	return 0;
+}
